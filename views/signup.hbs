@@ -1,0 +1,44 @@
+
+
+<h1>Welcome! Please Sign Up Below!</h1>
+
+<form action="/signup" method="POST">
+
+    <div>
+        <label for="firstname">First Name: </label>
+        <input type="text" name="firstname">
+    </div>
+
+    <div>
+        <label for="lastname">Last Name: </label>
+        <input type="text" name="lastname">
+    </div>
+
+      <div>
+        <label for="email">Email: </label>
+        <input type="text" name="email">
+    </div>
+
+    <div>
+        <label for="username">Username: </label>
+        <input type="text" name="username">
+    </div>
+
+      <div>
+        <label for="password">Password: </label>
+        <input type="text" name="password">
+    </div>
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+
+</form>
+
+
+<ul>
+    {{#each users}}
+    <li>{{FirstName}} {{LastName}}</li>
+    {{/each}}
+</ul>
+
